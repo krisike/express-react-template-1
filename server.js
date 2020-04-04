@@ -2,6 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
 
+const axios = require('axios');
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -18,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
 // JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
 app.get('/api/demo', (request, response) => {
   response.json({
-    message: 'Hello from server.js'
+    message: 'Need API here.'
   });
 });
 // END DEMO
